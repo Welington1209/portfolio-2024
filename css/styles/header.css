@@ -1,0 +1,25 @@
+header {
+    background-color: #1e0d36;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+header img {
+    max-width: 2rem;
+    opacity: .7;
+}
+
+header img:hover {
+    opacity: 1;
+}
+
+
+header ul{
+display: flex;
+gap: 1.5rem;
+}
