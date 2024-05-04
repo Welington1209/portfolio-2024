@@ -1,0 +1,38 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#skills h2,
+#skills p {
+  margin-bottom: 2rem;
+}
+
+.container-skills ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.container-skills li {
+  border: 2px solid #693b93;
+
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.container-skills li:last-child a i {
+  color: white;
+}
+
+.container-skills a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container-skills a i {
+  font-size: 2rem;
+}
