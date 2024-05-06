@@ -45,6 +45,20 @@
   z-index: 1;
 }
 
+#experience .experiences-container :nth-child(3) {
+  transition-delay: 400ms;
+}
+
+#experience .experiences-container :nth-child(4) {
+  transition-delay: 700ms;
+
+}
+
+#experience .experiences-container :nth-child(5) {
+  transition-delay: 1000ms;
+
+}
+
 .experiences-container .work:hover {
   background-color: #7e16de;
   opacity: 0.8;

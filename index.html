@@ -27,8 +27,14 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="js/scripts.js" defer></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
   </head>
   <body>
     <header id="navegation">
@@ -55,17 +61,20 @@
       </nav>
     </header>
 
-    <section id="home">
+    <section data-aos="fade-right" id="home">
       <div class="home-presentation">
         <div class="position-relative">
           <p>Hello! <span> I Am Ibrahim Memon </span></p>
         </div>
 
         <div class="img-home">
-          <img src="assets/dev-removebg-preview.png" alt="" class="dev-img" />
+          <div  class="img-home-container" >
+            <img class="bg-home" src="assets/Gradient.png" alt="">
+            <img src="assets/dev-removebg-preview.png" alt="" class="dev-img" />
+          </div>
 
           <div>
-            <h1>Judges a book by its <span> cover </span> ...</h1>
+            <h1 id="title-home"></h1>
             <p>Because if the cover does not impress you what else can?</p>
           </div>
         </div>
@@ -98,7 +107,7 @@
       <div class="experiences-container">
         <img class="background-image" src="assets/Gradient.png" alt="" />
 
-        <div class="work">
+        <div data-aos="fade-down-right" data-aos-duration="1000" class="work">
           <img src="assets/bandeira.png" alt="" />
 
           <div class="info-work">
@@ -111,7 +120,7 @@
           </div>
         </div>
 
-        <div class="work">
+        <div data-aos="fade-down-left" data-aos-duration="1000" class="work">
           <img src="assets/lampada.png" alt="" />
 
           <div class="info-work">
@@ -124,7 +133,7 @@
           </div>
         </div>
 
-        <div class="work">
+        <div data-aos="fade-up-right" data-aos-duration="1000" class="work">
           <img src="assets/xicara.png" alt="" />
 
           <div class="info-work">
@@ -137,7 +146,7 @@
           </div>
         </div>
 
-        <div class="work">
+        <div data-aos="fade-up-left" data-aos-duration="1000" class="work">
           <img src="assets/microfone.png" alt="" />
 
           <div class="info-work">
@@ -153,7 +162,7 @@
       <a href="#">Home</a>
     </section>
 
-    <section id="skills">
+    <section data-aos="fade-right" data-aos-duration="1000" id="skills">
       <div class="title-skills">
         <h2>Skills</h2>
         <p>
@@ -226,7 +235,7 @@
       <a href="#">Home</a>
     </section>
 
-    <section id="projects">
+    <section data-aos="fade-right" data-aos-duration="1000" id="projects">
       <div>
         <div class="projects-container">
           <p>Featured Project</p>
@@ -257,7 +266,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-right" data-aos-duration="1000">
       <h2>Contact</h2>
 
       <p>
