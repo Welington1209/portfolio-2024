@@ -1,26 +1,20 @@
-const htmlIcon = document.querySelector("#html-icon");
+const icons = Array.from(document.querySelectorAll(".icon"));
 
-const cssIcon = document.querySelector("#css-icon");
+const sections = Array.from(document.getElementsByTagName("section"));
 
-const jsIcon = document.querySelector("#js-icon");
+const observer = new IntersectionObserver((entries) => {
+  const entriesObject = entries[0].target;
+  console.log(entriesObject);
+  if (entriesObject.classList.contains("hide-section")) {
+    entriesObject.classList.remove("hide-section");
+  } else {
+    entriesObject.classList.add("hide-section");
+  }
+}, {});
 
-const reactIcon = document.querySelector("#react-icon");
-
-const gitIcon = document.querySelector("#git-icon");
-
-const sassIcon = document.querySelector("#sass-icon");
-
-const gitHubIcon = document.querySelector("#gitHub-icon");
-
-const icons = [
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  gitIcon,
-  sassIcon,
-  gitHubIcon,
-];
+sections.map((sectionDom) => {
+  observer.observe(sectionDom);
+});
 
 icons.map((devIcon) => {
   devIcon.addEventListener("click", () => {
@@ -28,18 +22,3 @@ icons.map((devIcon) => {
     devIcon.classList.toggle("hide");
   });
 });
-
-const observer = new IntersectionObserver((entries) => {
-  const entriesObject = entries[0].target;
-  console.log(entriesObject)
-  entriesObject.classList.add("hide-section");
-}, {
-});
-
-const sections = Array.from(document.getElementsByTagName("section"));
-
-
-sections.map((sectionDom) => {
-  observer.observe(sectionDom);
-});
-
