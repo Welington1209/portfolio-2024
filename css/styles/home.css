@@ -31,27 +31,20 @@
 }
 
 .img-home-container {
-  position: relative;
-  padding: 2rem;
+ padding: 2rem;
+
+  background-image: url("../../assets/Gradient.png");
+  background-position: center;
+  background-size: contain;
 }
 
-.bg-home {
-  height: 100%;
-  left: 0;
-  opacity: .8;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 0;
-}
+
 
 .img-home {
   display: flex;
   gap: 2rem;
   align-items: center;
   align-self: flex-start;
-  z-index: 1;
 }
 
 .dev-img{
