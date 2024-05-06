@@ -28,3 +28,18 @@ icons.map((devIcon) => {
     devIcon.classList.toggle("hide");
   });
 });
+
+const observer = new IntersectionObserver((entries) => {
+  const entriesObject = entries[0].target;
+  console.log(entriesObject)
+  entriesObject.classList.add("hide-section");
+}, {
+});
+
+const sections = Array.from(document.getElementsByTagName("section"));
+
+
+sections.map((sectionDom) => {
+  observer.observe(sectionDom);
+});
+

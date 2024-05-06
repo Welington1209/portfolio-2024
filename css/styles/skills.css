@@ -2,14 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem;
   max-width: 100vw;
-
 }
 
 #skills h2,
 #skills p {
   margin-bottom: 2rem;
+}
+
+#skills img {
+  max-width: 60%;
 }
 
 .container-skills ul {
@@ -21,16 +25,14 @@
 .container-skills li {
   padding: 1rem;
   border-radius: 0.5rem;
-
-}
-
-.container-skills li:hover {
-  background-color: #7e16de;
-  opacity: 0.8;
 }
 
 .container-skills li:last-child i {
   color: white;
+}
+
+.container-skills li p {
+  transition: 0.5s ease-in-out;
 }
 
 .container-skills i {
@@ -44,8 +46,9 @@
 }
 
 .hide p {
-  display: none;  
-  font-size: .5rem;
+  font-size: 0.5rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .border {
