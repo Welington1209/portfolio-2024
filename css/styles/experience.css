@@ -22,11 +22,12 @@
 
 .experiences-container .background-image {
   height: 100%;
-  left: 0;
+  transform: translateX(-50%);
+  left: 50%;
   opacity: 0.8;
   position: absolute;
   right: 0;
-  width: 100%;
+  width: 50%;
   z-index: 0;
 }
 
@@ -51,17 +52,14 @@
 
 #experience .experiences-container :nth-child(4) {
   transition-delay: 700ms;
-
 }
 
 #experience .experiences-container :nth-child(5) {
   transition-delay: 1000ms;
-
 }
 
 .experiences-container .work:hover {
-  background-color: #7e16de;
-  opacity: 0.8;
+  background-color: #693b93;
 }
 
 .experiences-container .work:hover a {

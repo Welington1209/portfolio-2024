@@ -4,22 +4,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 2rem;
+    padding: .7rem 2rem;
     cursor: pointer;
-    transition: .4s ease-in-out;
 }
 
 header img {
     max-width: 2rem;
     opacity: .7;
+    transition: .4s ease-in-out;
+
 }
 
 header img:hover {
     opacity: 1;
+    border: 1px solid;
+    border-radius: 50%;
 }
 
 
 header ul{
 display: flex;
 gap: 1.5rem;
+}
+
+header ul li a {
+    border: none;
 }

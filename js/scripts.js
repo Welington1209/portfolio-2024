@@ -39,7 +39,7 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Judges a book by its cover ...')
+typewriter.typeString('Judges a book by its cover...')
 .pauseFor(2000)
 // .deleteAll()
 .pauseFor(200)

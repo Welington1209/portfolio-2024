@@ -13,7 +13,7 @@
 }
 
 #skills img {
-  max-width: 60%;
+  width: 100%;
 }
 
 .container-skills ul {
@@ -43,6 +43,15 @@
   gap: 1rem;
   align-items: center;
   cursor: pointer;
+}
+
+.img-skills {
+  align-self: center;
+  text-align: center;
+  background-image: url("../../assets/Gradient.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hide p {
