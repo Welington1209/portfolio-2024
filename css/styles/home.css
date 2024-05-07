@@ -44,7 +44,6 @@
 
 .img-home {
   padding: 2rem;
-
   background-image: url("../../assets/Gradient.png");
   background-position: center;
   background-size: contain;
@@ -62,14 +61,30 @@
   margin-bottom: 2.2rem;
 }
 
-#home h1 {
+.container-title-home h1 {
   max-width: 500px;
   margin-bottom: 1rem;
   color: var(--white-color);
+  line-height: 4rem;
+}
+
+.container-title-home h1 span {
+  color: var(--hover-color);
+}
+
+.container-title-home .elipse {
+  position: absolute;
+  top: 250px;
+  left: 545px;
+  width: 220px;
 }
 
 .home-presentation p:nth-child(2) {
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+
+.home-about h2 span {
+  font-size: 3rem;
 }
 
 .home-about p {
@@ -81,5 +96,5 @@
 }
 
 .home-about p span {
-  color: var(--blue-color) ;
+  color: var(--blue-color);
 }
