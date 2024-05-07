@@ -1,0 +1,36 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+
+#contact ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#contact .input-control {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#contact .name-email-container {
+  display: flex;
+  max-width: 50%;
+  justify-content: space-between;
+}
+
+
+#contact form textarea {
+  height: 6rem;
+  width: 50%;
+}

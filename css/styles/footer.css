@@ -1,5 +1,5 @@
-footer {
-  background-color: #1e0d36;
+#footer {
+  background-color: var(--header-color);
   width: 100%;
   padding: 1.5rem;
   display: flex;
