@@ -1,13 +1,14 @@
 #projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 .project-div {
   display: flex;
+  gap: 1rem;
 }
 
 .projects-container {
@@ -42,15 +43,32 @@
 }
 
 .projects-container p:first-child {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--hover-color);
   font-weight: 600;
 }
 
-.projects-container .blur p {
-  border: 1px solid var(--white-color);
-  
+.projects-container .blur {
+  filter: blur(2px);
+  background-color: var(--header-color);
+  transition: 0.4s ease-in-out;
   padding: 1rem;
   border-radius: 1rem;
+  box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
+  -webkit-box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
+  -moz-box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
+}
+
+.projects-container .blur:hover {
+  filter: blur(0);
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+.projects-container .blur p {
   color: var(--white-color);
+}
+
+.projects-container:last-child {
+  text-align: right;
 }
