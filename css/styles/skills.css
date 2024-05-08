@@ -13,8 +13,14 @@
 
 .container-skills ul {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+}
+
+.li-skills {
+  display: flex;
 }
 
 .container-skills li {

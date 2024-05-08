@@ -1,8 +1,16 @@
 :root {
   --bg-color: #11071f;
-  --header-color:#1e0d36;
+  --header-color: #1e0d36;
   --hover-color: #693b93;
   --white-color: #fafafa;
   --blue-color: rgb(74, 74, 252);
 
+  --bg-gradient: linear-gradient(
+    95.56deg,
+    #130428 0.58%,
+    #251043 16.32%,
+    #38126d 29.33%,
+    #261045 45.66%,
+    #190634 54.44%
+  );
 }

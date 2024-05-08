@@ -47,9 +47,12 @@
   background-image: url("../../assets/Gradient.png");
   background-position: center;
   background-size: contain;
+
+
 }
 
 .dev-img {
+
   width: 250px;
   height: 260px;
 }
@@ -70,12 +73,13 @@
 
 .container-title-home h1 span {
   color: var(--hover-color);
+  position: relative;
 }
 
 .container-title-home .elipse {
   position: absolute;
-  top: 250px;
-  left: 545px;
+  left: -10px;
+  top: 19px;
   width: 220px;
 }
 

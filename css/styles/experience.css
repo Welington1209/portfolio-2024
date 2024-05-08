@@ -39,11 +39,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  transition: 0.5s ease-in-out;
   box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
   -webkit-box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
   -moz-box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
   z-index: 1;
+  transition: 0.5s;
 }
 
 .experiences-container .work:nth-child(2) {
@@ -62,7 +62,7 @@
 }
 
 .experiences-container .work:hover {
-  background-color: var(--hover-color);
+  background: var(--bg-gradient);
 }
 
 .experiences-container .work:hover a {
