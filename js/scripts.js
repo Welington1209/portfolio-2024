@@ -1,6 +1,16 @@
 AOS.init();
 
 const icons = Array.from(document.querySelectorAll(".icon"));
+const homeH2 = document.getElementById("home-h2");
+const toTopBtn = document.querySelector("#to-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    toTopBtn.classList.add("active");
+  } else {
+    toTopBtn.classList.remove("active");
+  }
+});
 
 icons.map((devIcon) => {
   devIcon.addEventListener("click", () => {
@@ -8,8 +18,6 @@ icons.map((devIcon) => {
     devIcon.classList.toggle("hide");
   });
 });
-
-const homeH2 = document.getElementById("home-h2");
 
 var typewriter = new Typewriter(homeH2, {
   loop: true,
@@ -24,4 +32,3 @@ typewriter
   .pauseFor(200)
   .deleteChars(20)
   .start();
-

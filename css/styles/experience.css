@@ -43,7 +43,6 @@
   -webkit-box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
   -moz-box-shadow: 0px -1px 11px -2px rgba(105, 59, 147, 0.75);
   z-index: 1;
-  transition: 0.5s;
 }
 
 .experiences-container .work:nth-child(2) {
@@ -65,8 +64,15 @@
   background: var(--bg-gradient);
 }
 
+
 .experiences-container .work:hover a {
-  border: 1px solid var(--white-color);
+  border: 2px solid var(--white-color);
+
+}
+
+.experiences-container .info-work a:hover {
+  background-color: var(--white-color);
+  color: var(--hover-color);
 }
 
 .experiences-container .info-work {
@@ -81,10 +87,7 @@
   line-height: 1rem;
 }
 
-.experiences-container .info-work a:hover {
-  background-color: var(--white-color);
-  color: var(--hover-color);
-}
+
 
 @media (max-width: 970px) {
   #experience {
