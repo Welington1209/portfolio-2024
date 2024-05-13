@@ -47,12 +47,10 @@
   background-image: url("../../assets/Gradient.png");
   background-position: center;
   background-size: contain;
-
-
+  background-repeat: no-repeat;
 }
 
 .dev-img {
-
   width: 250px;
   height: 260px;
 }
@@ -64,14 +62,15 @@
   margin-bottom: 2.2rem;
 }
 
-.container-title-home h1 {
+.container-title-home #title-home {
   max-width: 500px;
   margin-bottom: 1rem;
   color: var(--white-color);
   line-height: 4rem;
+  font-size: 3rem;
 }
 
-.container-title-home h1 span {
+.container-title-home #title-home span {
   color: var(--hover-color);
   position: relative;
 }
@@ -101,4 +100,55 @@
 
 .home-about p span {
   color: var(--blue-color);
+}
+
+@media (max-width: 970px) {
+  #home .img-home-container {
+    flex-direction: column;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .img-home {
+    width: 200px;
+    height: 200px;
+    padding: 0.6rem;
+  }
+
+  .dev-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-title-home #title-home,
+  .container-title-home #title-home span {
+    font-size: 1.5rem;
+  }
+
+  .container-title-home .elipse {
+    width: 5rem;
+    top: 13px;
+  }
+
+  .container-title-home #title-home,
+  .container-title-home #title-home span {
+    line-height: 2.5rem;
+  }
+
+  .home-presentation .paragraph-relative {
+    display: none;
+  }
+
+  .paragraph-relative p,
+  .paragraph-relative span {
+    font-size: 15px;
+  }
+
+  .home-about h2 span {
+    font-size: 2rem;
+  }
+
+  .home-about p {
+    font-size: 1rem;
+  }
 }

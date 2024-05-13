@@ -72,3 +72,26 @@
 #skills img {
   width: 100%;
 }
+
+@media (max-width: 970px) {
+  .container-skills .li-skills {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .container-skills ul i {
+    font-size: 1.2rem;
+  }
+
+  .img-skills {
+    width: 100vw;
+  }
+
+  .img-skills .bg-img-skills {
+    top: 10%;
+  }
+  #skills img {
+    width: 70%;
+    height: 100px;
+  }
+}

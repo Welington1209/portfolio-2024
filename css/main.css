@@ -29,7 +29,7 @@ section {
   min-height: 100vh;
 }
 
-h1,
+
 h1 span,
 h2 {
   font-size: 3rem;
@@ -85,4 +85,16 @@ a {
 }
 .highlight {
   color: var(--hover-color);
+}
+
+@media(max-width: 970px) {
+  body {
+   width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+
+  }
+
+ 
+
 }

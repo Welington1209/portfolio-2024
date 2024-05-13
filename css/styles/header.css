@@ -28,3 +28,11 @@ header ul {
 header ul li a {
   border: none;
 }
+
+@media(max-width:970px) {
+
+  header ul {
+    display: none;
+
+  }
+}

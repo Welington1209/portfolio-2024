@@ -92,6 +92,7 @@
 @media (max-width: 970px) {
   #experience {
     align-items: center;
+
   }
 
   .experiences-container {
@@ -99,6 +100,14 @@
   }
 
   .experiences-container .work {
-    width: 80%;
+    width: 90%;
+    flex-direction: column;
   }
+
+  .work a  {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  
 }
