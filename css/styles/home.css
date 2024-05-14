@@ -104,8 +104,9 @@
 
 @media (max-width: 970px) {
   #home .img-home-container {
-    flex-direction: column;
-    max-width: 100%;
+
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 

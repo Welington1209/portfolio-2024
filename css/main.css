@@ -84,13 +84,8 @@ a {
 }
 
 @media (max-width: 970px) {
-  html {
-    width: 100vw;
-  }
-
   body {
-    width: 100%;
     min-height: 100vh;
-    gap: 1rem;
+    align-items: center;
   }
 }
