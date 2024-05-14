@@ -90,10 +90,6 @@
 
 
 @media (max-width: 970px) {
-  #experience {
-    align-items: center;
-
-  }
 
   .experiences-container {
     flex-direction: column;

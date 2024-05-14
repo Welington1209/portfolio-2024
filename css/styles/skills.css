@@ -11,6 +11,12 @@
   margin-bottom: 2rem;
 }
 
+.container-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-skills ul {
   display: flex;
   flex-direction: column;
@@ -26,6 +32,7 @@
 .container-skills li {
   padding: 1rem;
   border-radius: 0.5rem;
+  text-align: center;
 }
 
 .container-skills i {
@@ -79,10 +86,6 @@
     flex-wrap: wrap;
   }
 
-  .container-skills ul i {
-    font-size: 1.2rem;
-  }
-
   .img-skills {
     width: 100vw;
   }
@@ -90,8 +93,15 @@
   .img-skills .bg-img-skills {
     top: 10%;
   }
+
   #skills img {
     width: 70%;
     height: 100px;
+  }
+
+ 
+
+  .container-skills li p {
+    font-size: 0.8rem;
   }
 }
