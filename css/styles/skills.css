@@ -81,8 +81,11 @@
 
 @media (max-width: 970px) {
   .container-skills .li-skills {
-    max-width: 100%;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 1.5rem;
   }
 
   .img-skills {
@@ -96,11 +99,5 @@
   #skills img {
     width: 70%;
     height: 100px;
-  }
-
- 
-
-  .container-skills li p {
-    font-size: 0.8rem;
   }
 }
