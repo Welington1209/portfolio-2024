@@ -26,7 +26,7 @@
 }
 
 .paragraph-relative p span {
-  color: var(--hover-color);
+  color: var(--blue-color);
 }
 
 .vector {
