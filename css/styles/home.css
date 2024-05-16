@@ -103,6 +103,10 @@
 }
 
 @media (max-width: 970px) {
+
+  .home-presentation {
+    align-self: center;
+  }
   #home .img-home-container {
 
     justify-content: center;
