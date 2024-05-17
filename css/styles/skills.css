@@ -1,7 +1,7 @@
 #skills {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -24,10 +24,6 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
-/* 
-.li-skills {
-  display: flex;
-} */
 
 .container-skills li {
   padding: 1rem;
@@ -82,7 +78,7 @@
 }
 
 #skills img {
-  width: 100%;
+  width: 80%;
 }
 
 @media (max-width: 970px) {

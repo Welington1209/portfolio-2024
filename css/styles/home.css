@@ -79,9 +79,9 @@
 
 .container-title-home .elipse {
   position: absolute;
-  left: -10px;
-  top: 19px;
-  width: 220px;
+  left: -15px;
+  top: 25px;
+  width: 200px;
 }
 
 .home-presentation p:nth-child(2) {
@@ -130,7 +130,7 @@
   }
 
   .container-title-home .elipse {
-    width: 5rem;
+    width: 5.5rem;
     top: 13px;
   }
 
