@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio baseado em um layout do figma escolhido durante aula do curso CDPI">
     <title>Portfolio</title>
 
     <link
@@ -11,7 +12,6 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,18 +19,14 @@
       rel="stylesheet"
     />
 
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
 
-
     <script src="js/scripts.js" defer></script>
     <link rel="stylesheet" href="css/main.css" />
-    
   </head>
   <body>
     <header id="navegation">
@@ -57,7 +53,7 @@
       </nav>
     </header>
 
-    <section id="home">
+    <section id="home" data-aos-duration="2500" data-aos="zoom-in">
       <div class="home-presentation">
         <div class="paragraph-relative">
           <p>Hello! <span> I Am Ibrahim Memon </span></p>
@@ -71,7 +67,7 @@
         <div class="img-home-container">
           <div class="img-home">
             <img
-              src="assets/dev-removebg-preview.png"
+              src="assets/dev-removebg-preview.avif"
               alt="imagem do dev"
               class="dev-img"
             />
@@ -84,7 +80,7 @@
                 cover
                 <img
                   class="elipse"
-                  src="assets/Ellipse 5.png"
+                  src="assets/Ellipse 5.AVIF"
                   alt="borda do texto"
                 /> </span
               >...
@@ -102,7 +98,7 @@
           Currently. I`m a software Engineer at
           <span>
             <a href="#">
-              <i class="devicon-facebook-plain colored"></i>
+              <i class="bi bi-facebook"></i>
             </a>
             Facebook
           </span>
@@ -116,18 +112,18 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-aos-duration="2500" data-aos="zoom-in">
       <h2>Work Experience</h2>
 
       <div class="experiences-container">
         <img
           class="background-image"
-          src="assets/Gradient.png"
+          src="assets/Gradient.AVIF"
           alt="imagem de fundo"
         />
 
-        <div  class="work">
-          <img src="assets/bandeira.png" alt="imagem de uma bandeira" />
+        <div class="work">
+          <img src="assets/bandeira.AVIF" alt="imagem de uma bandeira" />
 
           <div class="info-work">
             <h3>CIB on the Mobile</h3>
@@ -142,7 +138,7 @@
         </div>
 
         <div class="work">
-          <img src="assets/lampada.png" alt="imagem de uma lâmpada" />
+          <img src="assets/lampada.AVIF" alt="imagem de uma lâmpada" />
 
           <div class="info-work">
             <h3>CIB on the Mobile</h3>
@@ -154,8 +150,8 @@
           </div>
         </div>
 
-        <div  class="work">
-          <img src="assets/xicara.png" alt="imagem de uma xícara" />
+        <div class="work">
+          <img src="assets/xicara.AVIF" alt="imagem de uma xícara" />
 
           <div class="info-work">
             <h3>CIB on the Mobile</h3>
@@ -167,8 +163,8 @@
           </div>
         </div>
 
-        <div  class="work">
-          <img src="assets/microfone.png" alt="imagem de um microfone" />
+        <div class="work">
+          <img src="assets/microfone.AVIF" alt="imagem de um microfone" />
 
           <div class="info-work">
             <h3>CIB on the Mobile</h3>
@@ -182,7 +178,7 @@
       </div>
     </section>
 
-    <section  id="skills">
+    <section id="skills" data-aos-duration="2500" data-aos="zoom-in">
       <div class="title-skills">
         <h2>Skills</h2>
         <p>
@@ -262,15 +258,15 @@
 
       <div class="img-skills">
         <img
-          src="assets/Gradient.png"
+          src="assets/Gradient.AVIF"
           class="bg-img-skills"
           alt="imagem de fundo"
         />
-        <img src="assets/logo.png" alt="logo do site" />
+        <img src="assets/logo.AVIF" alt="logo do site" />
       </div>
     </section>
 
-    <section  id="projects">
+    <section id="projects" data-aos-duration="2500" data-aos="zoom-in">
       <div class="project-div">
         <div class="projects-container">
           <p>Featured Project</p>
@@ -305,7 +301,7 @@
       </div>
     </section>
 
-    <section id="contact" >
+    <section id="contact" data-aos-duration="2500" data-aos="zoom-in">
       <h2>Contact</h2>
 
       <p>
@@ -319,35 +315,32 @@
       <ul>
         <li>
           <a href="">
-            <i class="bi bi-instagram"></i>
+            <i id="insta" class="bi bi-instagram"></i>
           </a>
         </li>
 
         <li>
           <a href="">
-            <i class="bi bi-threads"></i>
+            <i id="threads" class="bi bi-threads"></i>
           </a>
         </li>
 
         <li>
           <a href="">
-            <i class="bi bi-linkedin"></i>
+            <i id="linkedin" class="bi bi-linkedin"></i>
           </a>
         </li>
 
         <li>
           <a href="">
-            <i class="bi bi-whatsapp"></i>
+            <i id="whats" class="bi bi-whatsapp"></i>
           </a>
         </li>
       </ul>
     </section>
 
     <div>
-      <a id="to-top-btn" href="#">
-        <!-- <img src="assets/angulo-da-seta-para-cima.png" alt="" /> -->
-        <
-      </a>
+      <a id="to-top-btn" href="#"> < </a>
     </div>
 
     <footer id="footer">

@@ -25,8 +25,11 @@
   left: 290px;
 }
 
-.paragraph-relative p span {
-  color: var(--blue-color);
+.paragraph-relative p span,
+.container-title-home #title-home span,
+.home-about p span,
+.home-about a i {
+  color: rgb(59, 246, 168);
 }
 
 .vector {
@@ -44,7 +47,7 @@
 
 .img-home {
   padding: 2rem;
-  background-image: url("../../assets/Gradient.png");
+  background-image: url("../../assets/Gradient.AVIF");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -71,7 +74,6 @@
 }
 
 .container-title-home #title-home span {
-  color: var(--hover-color);
   position: relative;
 }
 
@@ -98,17 +100,12 @@
   border: none;
 }
 
-.home-about p span {
-  color: var(--blue-color);
+.home-about i {
+  color: var(--white-color);
 }
 
 @media (max-width: 970px) {
-
-  .home-presentation {
-    align-self: center;
-  }
   #home .img-home-container {
-
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -118,11 +115,13 @@
     width: 200px;
     height: 200px;
     padding: 0.6rem;
+    margin-bottom: 1rem;
   }
 
   .dev-img {
-    width: 100%;
-    height: 100%;
+    width: 215px;
+    height: 255px;
+    margin-bottom: 10px;
   }
 
   .container-title-home #title-home,

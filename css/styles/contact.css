@@ -1,8 +1,7 @@
 #contact {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 #contact ul {
@@ -11,30 +10,22 @@
   margin-top: 2rem;
 }
 
-#contact .input-control {
-  display: flex;
-  flex-direction: column;
-
+#contact ul a {
+  border: none;
 }
 
-#contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
+#insta {
+  color: rgb(246, 59, 143);
 }
 
-#contact .name-email-container {
-  display: flex;
-  max-width: 50%;
-  justify-content: space-between;
+#threads {
+  color: rgb(226, 220, 223);
 }
 
-
-#contact form textarea {
-  max-height: 6%;
-  z-index: 1;
-  max-width: 50%;
+#linkedin {
+  color: rgb(67, 46, 255);
 }
 
-
+#whats {
+  color: rgb(59, 246, 168);
+}
