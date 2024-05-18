@@ -51,6 +51,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 .dev-img {
@@ -112,10 +113,10 @@
   }
 
   .img-home {
-    width: 200px;
-    height: 200px;
+    width: 215px;
+    height: 255px;
     padding: 0.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .dev-img {
@@ -137,6 +138,10 @@
   .container-title-home #title-home,
   .container-title-home #title-home span {
     line-height: 2.5rem;
+  }
+
+  .home-presentation .vector {
+    scale: 0.8;
   }
 
   .home-presentation .paragraph-relative {

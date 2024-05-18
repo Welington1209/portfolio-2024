@@ -1,14 +1,26 @@
 header {
   width: 100%;
   background-color: var(--header-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.7rem 2rem;
 }
 
+header .logo {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header img {
-  max-width: 2rem;
+  width: 2rem;
   opacity: 0.7;
   transition: 1s ease-in-out;
   cursor: pointer;
@@ -20,20 +32,106 @@ header img:hover {
   border: 1px solid;
 }
 
-header ul {
+.hamburguer {
+  border: none;
+  background: none;
+  border-top: 3px solid var(--white-color);
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--white-color);
+  margin-top: 5px;
+  position: relative;
+  transition: 0.5s;
+}
+
+header .nav-list {
   display: flex;
   gap: 1.5rem;
 }
 
-header ul li a {
+header .nav-list li a {
   border: none;
 }
 
-@media(max-width:970px) {
+header .nav-list li:nth-child(1) a {
+  transition: 0.5s 0.2s;
+}
 
-  header ul {
-    display: none;
+header .nav-list li:nth-child(2) a {
+  transition: 0.5s 0.4s;
+}
+
+header .nav-list li:nth-child(3) a {
+  transition: 0.5s 0.6s;
+}
+
+header .nav-list li:nth-child(4) a {
+  transition: 0.5s 0.8s;
+}
+
+header .nav-list li:nth-child(5) a {
+  transition: 0.5s 1s;
+}
+
+@media (max-width: 970px) {
+  header .nav-list li a {
+    opacity: 0;
   }
 
+  .hamburguer {
+    display: block;
+    z-index: 2;
+  }
 
+  header .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-in-out;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white-color);
+    background-color: var(--bg-color);
+    z-index: 1;
+  }
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .nav.active .hamburguer {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburguer::before {
+    transform: rotate(-135deg);
+  }
+
+  .nav.active .hamburguer::after {
+    transform: rotate(135deg);
+    top: -7px;
+  }
 }
