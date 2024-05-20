@@ -98,8 +98,8 @@ header .nav-list li:nth-child(5) a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-in-out;
+    clip-path: circle(100px at 100% -30%);
+    transition: 1.2s ease-in-out;
     pointer-events: none;
     flex-direction: column;
     justify-content: space-around;
@@ -110,7 +110,7 @@ header .nav-list li:nth-child(5) a {
   }
 
   .nav.active .nav-list {
-    clip-path: circle(1500px at 90% -15%);
+    clip-path: circle(1700px at 100% -30%);
     pointer-events: all;
   }
 
